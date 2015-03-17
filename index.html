@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>Home Page</title>
+			<link rel="stylesheet" href="style.css" type="text/css" />
+			<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		</head>
+		<body>
+			<div class="searchContainer">
+				<form class="searchForm" method="get" target="_blank" action="https://www.google.com/#q=">
+					<input class="searchBar google" type="text" name="q" placeholder="Seach"/>
+				</form>
+			</div>
+			<ul class="border">
+				<li><a class="parent1" href="#">4chan</a>
+					<ul class="subMenu">
+						<li><a class="tab1" href="http://boards.4chan.org/g/">/g/</a></li>
+						<li><a class="tab1" href="http://boards.4chan.org/b/">/b/</a></li>
+						<li><a class="tab1" href="http://boards.4chan.org/po/">/po/</a></li>
+						<li><a class="tab1" href="http://boards.4chan.org/tv/">/tv/</a></li>
+						<li><a class="tab1" href="http://boards.4chan.org/pol/">/pol/</a></li>
+					</ul>
+				</li>
+				<li><a class="parent2" href="#">Random</a>
+					<ul class="subMenu">
+						<li><a class="tab2" href="https://reddit.com/r/calligraphy">/r/Calligraphy</a></li>
+						<li><a class="tab2" href="https://reddit.com/r/papercraft">/r/Papercraft</a></li>
+						<li><a class="tab2" href="instructables.com">Instructables</a></li>
+						<li><a class="tab2" href="http://codeacademy.com">Code Academy</a></li>
+						<li><a class="tab2" href="http://www.wolframalpha.com/">Wolfram Alpha</a></li>
+						<li><a class="tab2" href="http://artofmanliness.com">Art Of Manliness</a></li>
+						<li><a class="tab2" href="http://fuckinghomepage.com">Fucking Homepage</a></li>
+						<li><a class="tab2" href="https://khanacademy.com">Khan Academy</a></li>
+					</ul>				
+				</li>
+				<li><a class="parent3" href="#">Dota 2</a>
+					<ul class="subMenu">
+						<li><a class="tab3" href="https://reddit.com/r/dota2">/r/dota2</a></li>
+						<li><a class="tab3" href="https://dota2lounge.com">Dota2Lounge</a></li>
+						<li><a class="tab3" href="http://www.dotabuff.com/players/87231191">Dotabuff</a></li>
+						<li><a class="tab3" href="http://dota2.gamepedia.com/Dota_2_Wiki">Dota2Wiki</a></li>
+						<li><a class="tab3" href="http://www.dotaedge.com/">DotaEdge</a/></li>
+						<li><a class="tab3" href="http://www.PlayDota.com">PlayDota</a></li>
+						<li><a class="tab3"  href="http://www.gosugamers.net/dota">GosuGamers</a></li>
+						<li><a class="tab3"  href="http://www.joindota.com/en/start">joinDOTA</a></li>
+						<li><a class="tab3"  href="http://www.datdota.com/">DatDota</a></li>
+						<li><a class="tab3" href="http://dotabank.com/">DotaBank</a></li>
+					</ul>
+				</li>
+				<li><a class="parent4" href=#">Torrents</a>
+					<ul class="subMenu">
+					<li><a class="tab3" href="https://baconbits.org">BaconBits</a></li>
+					<li><a class="tab3" href="https://mutracker.org/">>MuTracker</a></li>
+					<li><a class="tab3" href="http://kickass.to/">Kickasss Torrents</a></li>
+					<li><a class="tab3" href="https://animebytes.tv/index.php">AnimeBytes</a></li>
+					<li><a class="tab3" href="https://awesome-hd.net/index.php">Awesome-HD</a></li>
+					<li><a class="tab3" href="https://baconbits.org/">BaconBits</a></li>
+				</li>
+				<li><a class="parent5" href=#">Videos/Gifs/Webms</a>
+					<ul class="subMenu">
+						<li><a class="tab5" href="https://pomf.se">Pomf</a></li>
+						<li><a class="tab5" href="https://gfycat.com">Gfycat</a></li>
+						<li><a class="tab5" href="https://imgur.com">Imgur</a></li>
+					</ul>
+				</li>
+			</ul>
+				<script>
+					$('.subMenu').hide();
+					$("li:has(ul)").click(function(){
+					$("ul",this).slideToggle('slow');
+					});
+				</script>
+		</body>
+	</html>
